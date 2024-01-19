@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { CreditCard } from "@medusajs/icons"
 
 import Ideal from "@modules/common/icons/ideal"
@@ -8,7 +8,7 @@ import PayPal from "@modules/common/icons/paypal"
 /* Map of payment provider_id to their title and icon. Add in any payment providers you want to use. */
 export const paymentInfoMap: Record<
   string,
-  { title: string; icon: React.JSX.Element }
+  { title: string; icon: JSX.Element }
 > = {
   stripe: {
     title: "Credit card",
